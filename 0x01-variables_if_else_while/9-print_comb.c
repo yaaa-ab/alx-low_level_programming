@@ -6,12 +6,17 @@
  */
 int main(void)
 {
-	int l;
-	char letters[26] = "0123456789abcdef";
+	int x = 0;
 
-	for (l = 0 ; l < 17; l++)
+	while (x < 10)
 	{
-		putchar(letters[l]);
+		putchar(x + '0');
+		if (x < 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		x++;
 	}
 	putchar('\n');
 	return (0);
