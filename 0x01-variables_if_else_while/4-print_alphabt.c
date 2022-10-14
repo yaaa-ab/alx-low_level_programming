@@ -9,7 +9,7 @@ int main(void)
 	int l;
 	char letters[24] = "abcdfghijklmnoprstuvwxyz";
 
-	for (l = 0 ; l < 25; l++)
+	for (l = 0 ; l < 24; l++)
 	{
 		putchar(letters[l]);
 	}
