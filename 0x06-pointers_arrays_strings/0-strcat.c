@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * strcat - Concatenates strings.
  * @dest: A pointer to the string to be concatenated upon.
@@ -7,15 +7,19 @@
  *
  * Return: A pointer to the dination string @d.
  */
-char *strcat(char *dest, const char *src)
+char *_strcat(char *dest, char *src)
 {
-	int i = 0, d = 0;
+	int i = 0, d;
 
-	while (dest[i++])
-		d++;
+	while (dest[i])
+		i++;
 
-	for (i = 0; src[i]; i++)
-		dest[d++] = src[i];
+	for (d = 0; src[d]; d++)
+	{
+		dest[i] = src[d];
+		i++;
+	}
+	dest[i] = '\0';
 
 	return (dest);
 }
