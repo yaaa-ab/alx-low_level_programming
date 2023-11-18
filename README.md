@@ -1,1 +1,1 @@
-C - Hello, World ALX project
+C - ALX project
